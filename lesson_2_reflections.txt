@@ -1,13 +1,26 @@
-What happens when you initialize a repository?
+-What happens when you initialize a repository?
 
-- When you first initialize a reporsitory, git will create the .git file to indicate that this is a git reporsitory. However, git will not commit after init, because everytime you commit, you need to write a commit message to tell what's changing.
-
-
-Why do you need to do it?
-
-- Might need to manually commit or assign a head to the current repository.
+When you first initialize a reporsitory, git will create the .git file to indicate that this is a git reporsitory. However, git will not commit after init, because everytime you commit, you need to write a commit message to tell what's changing.
 
 
-How is the staging area different from the working directory and the repository? What value do you think it offers?
+-Why do you need to do it?
 
-- Changes are not tracked in the working directory. Chnges are only tracked by git when the file is in the staging area. It offers flexibility! Not all files need to be tracked.
+Might need to manually commit or assign a head to the current repository.
+
+
+-How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+Changes are not tracked in the working directory. Chnges are only tracked by git when the file is in the staging area. It offers flexibility! Not all files need to be tracked.
+
+-What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+The result of merging two branches together are a new master tip with changes combined. Git compares three files
+to do this
+	1. the revert control file, where diff started
+	2. the first branch tip
+	3. the master branch tip
+What's in 1 and 2 and 3 will be in the new master
+What's in 1 and but not in either 2, 3, will not be in new master, because it is deleted by either 2 or 3
+What's in 2 or 3, but not in 1, will be in the new master, because it is added by either 2 or 3
+
+The diagram is represented that way because it is easier to spot branches and its commits
