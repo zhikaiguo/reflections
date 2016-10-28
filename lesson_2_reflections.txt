@@ -24,3 +24,12 @@ What's in 1 and but not in either 2, 3, will not be in new master, because it is
 What's in 2 or 3, but not in 1, will be in the new master, because it is added by either 2 or 3
 
 The diagram is represented that way because it is easier to spot branches and its commits
+
+-What are the pros and cons of Git's automatic mergring vs. always doing merges manually?
+Automatic merging saves time. However, it is not intelligent enough to not introduce errors and resolve conflict
+the correct way.
+
+Manually merging takes longer time to review. But always gurantee a better outcome from the merge.
+
+We should combine the use of Automatic merging and Manually merging. Automatic merge when there is no 
+conflict. Use manually merge if there is any doubt.
