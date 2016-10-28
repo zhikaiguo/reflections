@@ -1,0 +1,13 @@
+What happens when you initialize a repository?
+
+- When you first initialize a reporsitory, git will create the .git file to indicate that this is a git reporsitory. However, git will not commit after init, because everytime you commit, you need to write a commit message to tell what's changing.
+
+
+Why do you need to do it?
+
+- Might need to manually commit or assign a head to the current repository.
+
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+- Changes are not tracked in the working directory. Chnges are only tracked by git when the file is in the staging area. It offers flexibility! Not all files need to be tracked.
