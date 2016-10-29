@@ -6,3 +6,11 @@ Keep your file locally if you just need to track changes to your self.
 -Why might you want to always pull changes rather than having Git automactically stay up-to-date with your remote repository.
 
 There are times when you and other people are working on different things. You don't want your version to mix with the other people's version before discussing about it.
+
+-Describe the difference between forks, clones, and branches. When would you use on instead of another?
+
+Fork is a clone only on Github remote repositories. Use fork when you want to contribute back to the upstream repo. Whe you use fork you are cloning the upstream repo as your own repo on GitHub server. Then you can locally clone the repo and add update to it.
+
+Clone is to make a copy of a repository to your local machine. If this repository is not yours, you won't be able to push changes to it unless declared as contributor.
+
+Branches operate on repositories. Use branch when you want to test out new features, that you don't want to affect the master.
