@@ -14,3 +14,7 @@ Fork is a clone only on Github remote repositories. Use fork when you want to co
 Clone is to make a copy of a repository to your local machine. If this repository is not yours, you won't be able to push changes to it unless declared as contributor.
 
 Branches operate on repositories. Use branch when you want to test out new features, that you don't want to affect the master.
+
+-What is the benefit of having a copy of the last known state of the remote stored locally?
+
+The benefit is that you can be offline and know what the difference is since you last pulled from your repository.
